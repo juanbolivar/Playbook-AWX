@@ -1,0 +1,6 @@
+- name: Realizar un ping a localhost
+  hosts: localhost
+  tasks:
+  - name: Ejecutar un ping a localhost
+    ping:
+
