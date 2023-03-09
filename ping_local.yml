@@ -1,5 +1,5 @@
 - name: Realizar un ping a localhost
-  hosts: localhost
+  hosts: all
   tasks:
   - name: Ejecutar un ping a localhost
     ping:
