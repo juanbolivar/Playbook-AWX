@@ -1,6 +1,7 @@
-- name: Realizar un ping a localhost
-  hosts: all
+- name: Realizar un ping a la máquina Windows
+  hosts: localhost
+  gather_facts: no
   tasks:
-  - name: Ejecutar un ping a localhost
-    ping:
-
+    - name: Ping
+      ping:
+        dest: 192.168.1.34
