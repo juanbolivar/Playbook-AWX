@@ -1,7 +1,6 @@
 - name: Realizar un ping a la máquina Windows
-  hosts: localhost
+  hosts: 192.168.1.34
   gather_facts: no
   tasks:
     - name: Ping
       ping:
-        dest: 192.168.1.34
